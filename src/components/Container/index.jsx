@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './index.css'
 
-const Container=({children})=>{
+import ContextMenu from '../ContextMenu'
+
+const Container = ({ children }) => {
+
+    const containerRef = useRef(null);
+
     return (
-        <div className='container'>
+        <div className='container' ref={containerRef}>
             {children}
+            <ContextMenu parentRef={containerRef}></ContextMenu>
         </div>
     )
 }
