@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import './index.css'
 
-const ContextMenu = ({ parentRef, items }) => {
+const ContextMenu = ({ parentRef, items, containerId }) => {
 
     const [isVisible, setIsVisible] = useState(false);
     const [x, setX] = useState(0);
@@ -13,7 +13,6 @@ const ContextMenu = ({ parentRef, items }) => {
         if (!parent) {
             return;
         }
-        console.log(parent);
 
         const showMenu = (event) => {
             event.preventDefault();
@@ -47,7 +46,7 @@ const ContextMenu = ({ parentRef, items }) => {
             {items.map((item, index) => {
                 return (
                     <div key={index}
-                        onClick={item.onClick}
+                        onClick={() => item.onclick(containerId)}
                         className='context-menuItem'>
                         {item.text}
                     </div>

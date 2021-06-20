@@ -6,11 +6,11 @@ import Container from './components/Container'
 const menuItems = [
   {
     text: 'Item 1',
-    onclick: () => { console.log("Item 1 clicked"); }
+    onclick: (id) => { console.log(`Item one from container  ${id} clicked`); }
   },
   {
     text: 'Item 2',
-    onclick: () => { console.log("Item 2 clicked"); }
+    onclick: (id) => { console.log(`Item two from container ${id} clicked`); }
   }
 ];
 
@@ -19,13 +19,13 @@ function App() {
     <div className="App">
       <div className='containers'>
         <div className='containerItem'>
-          <Container menuItems={menuItems}>
+          <Container menuItems={menuItems} containerId='1'>
             Container1
           </Container>
         </div>
 
         <div className='containerItem'>
-          <Container>
+          <Container  menuItems={menuItems}  containerId='2'>
             Container2
           </Container>
         </div>

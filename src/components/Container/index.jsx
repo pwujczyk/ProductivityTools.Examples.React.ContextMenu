@@ -3,14 +3,14 @@ import './index.css'
 
 import ContextMenu from '../ContextMenu'
 
-const Container = ({ children, menuItems }) => {
+const Container = ({ children, menuItems, containerId }) => {
 
     const containerRef = useRef(null);
 
     return (
         <div className='container' ref={containerRef}>
             {children}
-            <ContextMenu parentRef={containerRef} items={menuItems}></ContextMenu>
+            <ContextMenu parentRef={containerRef} items={menuItems} containerId={containerId}></ContextMenu>
         </div>
     )
 }
