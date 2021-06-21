@@ -16,5 +16,7 @@ Example shows how to create right button menu - context menu. It is done in func
 
 <!--more-->
 
+Example is rewritten from https://nmingaleev.medium.com/how-to-create-a-custom-context-menu-with-react-hooks-30d011f205a0 
+
 <!--og-image-->
 ![](Images/chrome-capture.gif)
