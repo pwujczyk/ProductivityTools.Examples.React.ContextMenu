@@ -14,6 +14,8 @@ const ContextMenu = ({ parentRef, items, containerId }) => {
             return;
         }
 
+        console.log(parentRef);
+
         const showMenu = (event) => {
             event.preventDefault();
             setIsVisible(true);

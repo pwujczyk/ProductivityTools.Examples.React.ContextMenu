@@ -8,7 +8,7 @@ const Container = ({ children, menuItems, containerId }) => {
     const containerRef = useRef(null);
 
     return (
-        <div className='container' ref={containerRef}>
+        <div className='container' ref={containerRef} containerId="xxxxx">
             {children}
             <ContextMenu parentRef={containerRef} items={menuItems} containerId={containerId}></ContextMenu>
         </div>
