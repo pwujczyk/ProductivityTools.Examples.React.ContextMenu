@@ -1,6 +1,6 @@
-<!--Category:PowerShell--> 
+<!--Category:React--> 
  <p align="right">
-    <a href="http://productivitytools.tech/XXX/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="http://productivitytools.tech/example-react-context-menu/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
     <a href="https://github.com/pwujczyk/ProductivityTools.Examples.React.ContextMenu"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
  
-# React - Context menu 
+# Example - React - Context menu 
 
 Example shows how to create right button menu - context menu. It is done in functional approach.
 
